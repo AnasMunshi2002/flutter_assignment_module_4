@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
       SelectDate(),
       OptionMenu(),
       EditViewDelOption(),
-      GmailApp(),
+      GmailAppSplash(),
       BottomNav(),
       GalleryBottomNav(),
       PhoneAppDialog(),
