@@ -56,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
       EditViewDelOption(),
       GmailAppSplash(),
       BottomNav(),
-      GalleryBottomNav(),
+      GalleryNavDrawer(),
       PhoneAppDialog(),
       SplashUI(),
       ActivityRedirect(),
