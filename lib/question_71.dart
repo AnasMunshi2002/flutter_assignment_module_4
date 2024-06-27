@@ -64,103 +64,6 @@ List<AssetImage> _galleryList = [
   AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
   AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
 ];
-List<AssetImage> _audioList = [
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-];
-List<AssetImage> _videoList = [
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-  AssetImage('assets/gallery/IMG_20220609_165753.png'),
-  AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-  AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-  AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-];
 
 class NavWidgetValue {
   Widget widget;
@@ -306,29 +209,28 @@ class Audio extends StatefulWidget {
   State<Audio> createState() => _AudioState();
 }
 
-class _AudioState extends State<Audio> {
-  List<AudioClass> _audioList = [
-    AudioClass(artist: 'Atif Aslam', song: 'Aadat', album: 'Aadat'),
-    AudioClass(artist: 'Arjit Singh', song: 'Kesariya', album: 'Brahmastra'),
-    AudioClass(
-        artist: 'Adnan Sami', song: 'Bhar Do jholi Meri', album: 'album'),
-    AudioClass(artist: 'Alan Walker', song: 'Alone', album: 'Alone'),
-    AudioClass(artist: 'AR Rahman', song: 'Kun faya Kun', album: 'Rockstar'),
-    AudioClass(artist: 'AP Dhillon', song: 'Excused', album: 'Excuses'),
-    AudioClass(artist: 'AP Dhillon', song: 'Brown Munde', album: 'Brown Munde'),
-    AudioClass(artist: 'Rafi', song: 'Gulabi Aankhen', album: 'album'),
-    AudioClass(artist: 'Rosa Linn', song: 'Snap', album: 'Snap'),
-    AudioClass(artist: 'Shubh', song: 'King Shit', album: 'king shit'),
-    AudioClass(artist: 'Shub', song: 'Cheques', album: 'cheques'),
-    AudioClass(artist: 'Ghost', song: 'Mary On a Cross', album: 'album'),
-    AudioClass(artist: 'Justin Beiber', song: 'Yummy', album: 'album'),
-    AudioClass(artist: 'The Weekend', song: 'Blinding Lights', album: 'album'),
-    AudioClass(artist: 'Avicii', song: 'The Nights', album: 'album'),
-    AudioClass(artist: 'Jaynes Young', song: 'Infinity', album: 'album'),
-    AudioClass(artist: 'Ed Sheeran', song: 'Perfect', album: 'album'),
-    AudioClass(artist: 'Sia', song: 'Unstoppable', album: 'album'),
-  ];
+List<AudioClass> _audioList = [
+  AudioClass(artist: 'Atif Aslam', song: 'Aadat', album: 'Aadat'),
+  AudioClass(artist: 'Arjit Singh', song: 'Kesariya', album: 'Brahmastra'),
+  AudioClass(artist: 'Adnan Sami', song: 'Bhar Do jholi Meri', album: 'album'),
+  AudioClass(artist: 'Alan Walker', song: 'Alone', album: 'Alone'),
+  AudioClass(artist: 'AR Rahman', song: 'Kun faya Kun', album: 'Rockstar'),
+  AudioClass(artist: 'AP Dhillon', song: 'Excused', album: 'Excuses'),
+  AudioClass(artist: 'AP Dhillon', song: 'Brown Munde', album: 'Brown Munde'),
+  AudioClass(artist: 'Rafi', song: 'Gulabi Aankhen', album: 'album'),
+  AudioClass(artist: 'Rosa Linn', song: 'Snap', album: 'Snap'),
+  AudioClass(artist: 'Shubh', song: 'King Shit', album: 'king shit'),
+  AudioClass(artist: 'Shub', song: 'Cheques', album: 'cheques'),
+  AudioClass(artist: 'Ghost', song: 'Mary On a Cross', album: 'album'),
+  AudioClass(artist: 'Justin Beiber', song: 'Yummy', album: 'album'),
+  AudioClass(artist: 'The Weekend', song: 'Blinding Lights', album: 'album'),
+  AudioClass(artist: 'Avicii', song: 'The Nights', album: 'album'),
+  AudioClass(artist: 'Jaynes Young', song: 'Infinity', album: 'album'),
+  AudioClass(artist: 'Ed Sheeran', song: 'Perfect', album: 'album'),
+  AudioClass(artist: 'Sia', song: 'Unstoppable', album: 'album'),
+];
 
+class _AudioState extends State<Audio> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -392,57 +294,58 @@ class Videos extends StatefulWidget {
   State<Videos> createState() => _VideosState();
 }
 
+List<VideoItem> _videoList = [
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+      name: 'Video 1',
+      length: '2:00'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
+      name: 'Video 2',
+      length: '1:00'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+      name: 'Video 3',
+      length: '3:00'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+      name: 'Video 4',
+      length: '1:20'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
+      name: 'Video 5',
+      length: '2:10'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+      name: 'Video 6',
+      length: '2:02'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+      name: 'Video 7',
+      length: '0:20'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+      name: 'Video 8',
+      length: '3:00'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+      name: 'Video 9',
+      length: '4:00'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+      name: 'Video 10',
+      length: '2:01'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+      name: 'Video 11',
+      length: '1:10'),
+  VideoItem(
+      thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+      name: 'Video 12',
+      length: '0:20'),
+];
+
 class _VideosState extends State<Videos> {
-  List<VideoItem> _videoList = [
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-        name: 'Video 1',
-        length: '2:00'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-        name: 'Video 2',
-        length: '1:00'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
-        name: 'Video 3',
-        length: '3:00'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-        name: 'Video 4',
-        length: '1:20'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
-        name: 'Video 5',
-        length: '2:10'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-        name: 'Video 6',
-        length: '2:02'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
-        name: 'Video 7',
-        length: '0:20'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-        name: 'Video 8',
-        length: '3:00'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-        name: 'Video 9',
-        length: '4:00'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
-        name: 'Video 10',
-        length: '2:01'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
-        name: 'Video 11',
-        length: '1:10'),
-    VideoItem(
-        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
-        name: 'Video 12',
-        length: '0:20'),
-  ];
   @override
   Widget build(BuildContext context) {
     return Container(
