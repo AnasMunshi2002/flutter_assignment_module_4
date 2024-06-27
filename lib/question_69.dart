@@ -51,7 +51,7 @@ class _GmailAppState extends State<GmailApp> {
     MailScreen(),
     MeetApp(),
   ];
-  var _drawerIndex = 0;
+  var _drawerIndex = 1;
   Color _mailColor = Color.fromRGBO(51, 75, 79, 1);
   Color _meetColor = Color.fromRGBO(24, 34, 36, 1);
   @override
@@ -67,7 +67,13 @@ class _GmailAppState extends State<GmailApp> {
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15))),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ComposeEmail(),
+                    ));
+              },
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -760,6 +766,203 @@ class _MeetAppState extends State<MeetApp> {
               )
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class ComposeEmail extends StatefulWidget {
+  const ComposeEmail({super.key});
+
+  @override
+  State<ComposeEmail> createState() => _ComposeEmailState();
+}
+
+class _ComposeEmailState extends State<ComposeEmail> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(11, 21, 22, 1),
+      appBar: AppBar(
+        leading: BackButton(
+          color: Colors.white70,
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        backgroundColor: Color.fromRGBO(11, 21, 22, 1),
+        actions: [
+          TextButton(
+              onPressed: () {},
+              child: Icon(
+                Icons.attachment_rounded,
+                color: Colors.white70,
+              )),
+          TextButton(
+              onPressed: () {},
+              child: Icon(
+                Icons.send_outlined,
+                color: Colors.white70,
+              )),
+          PopupMenuButton(
+            color: Color.fromRGBO(11, 21, 22, 1),
+            iconColor: Colors.white70,
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                child: Text(
+                  'Schedule send',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Add from Contacts',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Confidential mode',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Save draft',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Discard',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Settings',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+              PopupMenuItem(
+                child: Text(
+                  'Help and Feedback',
+                  style: TextStyle(color: Colors.white70),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+      body: Container(
+        height: 600,
+        child: ListView(
+          children: [
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Text(
+                    'From',
+                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                  ),
+                  SizedBox(
+                    width: 18,
+                  ),
+                  Expanded(
+                    child: TextField(
+                      enableSuggestions: true,
+                      cursorColor: Colors.white70,
+                      style: TextStyle(
+                        color: Colors.white70,
+                      ),
+                      decoration: InputDecoration(border: InputBorder.none),
+                      keyboardType: TextInputType.emailAddress,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              thickness: 1,
+              color: Colors.white70,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Text(
+                    'To',
+                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                  ),
+                  SizedBox(
+                    width: 18,
+                  ),
+                  Expanded(
+                    child: TextField(
+                      cursorColor: Colors.white70,
+                      style: TextStyle(color: Colors.white70),
+                      decoration: InputDecoration(border: InputBorder.none),
+                      keyboardType: TextInputType.emailAddress,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              thickness: 1,
+              color: Colors.white70,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: TextField(
+                      cursorColor: Colors.white70,
+                      style: TextStyle(color: Colors.white70),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Subject',
+                        hintStyle:
+                            TextStyle(color: Colors.white54, fontSize: 16),
+                      ),
+                      keyboardType: TextInputType.text,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              thickness: 1,
+              color: Colors.white70,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Expanded(
+                    child: TextFormField(
+                      cursorColor: Colors.white70,
+                      style: TextStyle(color: Colors.white70),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Compose email',
+                        hintStyle:
+                            TextStyle(color: Colors.white54, fontSize: 16),
+                      ),
+                      keyboardType: TextInputType.text,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
