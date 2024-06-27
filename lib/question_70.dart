@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomNav extends StatefulWidget {
@@ -13,7 +14,6 @@ class NavWidgetValue {
 }
 
 class _BottomNavState extends State<BottomNav> {
-  List<AssetImage> _galleryList = [];
   List<NavWidgetValue> _navList = [
     NavWidgetValue(widget: Gallery(), appbar: 'Gallery'),
     NavWidgetValue(widget: Audio(), appbar: 'Audio'),
@@ -226,18 +226,124 @@ class _AudioState extends State<Audio> {
   }
 }
 
-class Videos extends StatefulWidget {
-  const Videos({super.key});
+class VideoItem {
+  AssetImage thumbnail;
+  String name;
+  String length;
 
+  VideoItem(
+      {required this.thumbnail, required this.name, required this.length});
+}
+
+class Videos extends StatefulWidget {
   @override
   State<Videos> createState() => _VideosState();
 }
 
 class _VideosState extends State<Videos> {
+  List<VideoItem> _videoList = [
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+        name: 'Video 1',
+        length: '2:00'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
+        name: 'Video 2',
+        length: '1:00'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+        name: 'Video 3',
+        length: '3:00'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+        name: 'Video 4',
+        length: '1:20'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20221224_215139_661.jpg'),
+        name: 'Video 5',
+        length: '2:10'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+        name: 'Video 6',
+        length: '2:02'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+        name: 'Video 7',
+        length: '0:20'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+        name: 'Video 8',
+        length: '3:20'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+        name: 'Video 9',
+        length: '4:00'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220609_165753.png'),
+        name: 'Video 10',
+        length: '2:11'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220607_101022_824.jpg'),
+        name: 'Video 11',
+        length: '1:14'),
+    VideoItem(
+        thumbnail: AssetImage('assets/gallery/IMG_20220618_185736_285.jpg'),
+        name: 'Video 12',
+        length: '0:20'),
+  ];
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Videos'),
+    return Container(
+      child: ListView.builder(
+        itemCount: _videoList.length,
+        itemExtent: 100,
+        itemBuilder: (context, index) => MaterialButton(
+          onPressed: () {},
+          padding: EdgeInsets.all(0),
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Row(
+              children: [
+                Stack(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.36,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.black26,
+                          image: DecorationImage(
+                              image: _videoList[index].thumbnail,
+                              fit: BoxFit.fitWidth)),
+                    ),
+                    Center(
+                      widthFactor: 3.3,
+                      child: Icon(
+                        Icons.play_arrow,
+                        size: 40,
+                        color: Colors.white70,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Expanded(
+                    child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _videoList[index].name,
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    Text(_videoList[index].length),
+                  ],
+                ))
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
